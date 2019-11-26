@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>lea</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    :root{
+        --button-height: 32px;
+        --font-size: 14px;
+        --button-bg: white;
+        --button-active-bg: #eee;
+        --border-radius:4px;
+        --color:#333;
+        --border-color: #999;
+        --border-color-hover: #666;
+    }
+    body{
+        margin: 20px;
+    }
+    </style>
 </head>
 <body>
     <div id="app">
-        <div>{{message}}</div>
+        <lea-button></lea-button>
     </div>
-    <script src="./node_modules/vue/dist/vue.min.js"></script> 
-    <script>
-    new Vue({
-        el: '#app',
-        data: {
-            message: 'hello'
-        }
-    })
-    </script>
+    <script src="./src/app.js"></script>
 </body>
 </html>
