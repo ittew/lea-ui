@@ -5,7 +5,15 @@
 </template>
 <script>
 export default {
-    
+    mounted () {
+        // 用户使用 lea-button-group 不正确警告信息
+        for (const node of this.$el.children) {
+            let nodeName = node.nodeName.toLowerCase()
+            if (nodeName !== 'button') {
+                console.warn(`lea-button-group 的子元素应该全是 lea-button, 但你写的是${nodeName}`)
+            }    
+        }
+    }
 }
 </script>
 
@@ -15,7 +23,9 @@ export default {
     vertical-align: middle;
     .lea-button{
         border-radius: 0;
-        margin-left: -1px;
+        &:not(:first-child){
+            margin-left: -1px;
+        }
         &:first-child{
             border-top-left-radius: var(--border-radius);
             border-bottom-left-radius: var(--border-radius);
