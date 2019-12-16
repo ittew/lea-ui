@@ -1,7 +1,10 @@
 <template>
-    <button class="lea-button" :class="{[`icon-${iconposition}`]: iconposition}">
-        <lea-icon v-if="icon" :name="icon" class="icon"></lea-icon>
-        <lea-icon name="jiazaizhong" class="icon loading"></lea-icon>
+    <button class="lea-button" 
+        :class="{[`icon-${iconposition}`]: iconposition}"
+        @click="$emit('click')"
+    >
+        <lea-icon v-if="icon && !loading" :name="icon" class="icon"></lea-icon>
+        <lea-icon v-if="loading" name="jiazaizhong" class="icon loading"></lea-icon>
         <div class="content">
             <slot></slot>    
         </div>   
@@ -11,6 +14,10 @@
 export default {
     props: {
         icon: {},
+        loading: {
+            type: Boolean,
+            default: false
+        },
         iconposition: {
             type: String,
             default: 'left',

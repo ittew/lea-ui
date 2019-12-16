@@ -32,14 +32,15 @@
 </head>
 <body>
     <div id="app">
-        <lea-button icon="shezhi">按钮</lea-button>
-        <lea-button icon="arrow-right" iconposition="right">按钮</lea-button>
-        <lea-button icon="arrow-left">按钮</lea-button>
-        <lea-button icon="zan" iconposition="left">按钮</lea-button>
-        <lea-button icon="arrow-down" iconposition="left">按钮</lea-button>
-        <lea-button icon="xiazai" iconposition="left">按钮</lea-button>
+        <lea-button :loading="loading1" @click="loading1=!loading1">确定</lea-button>
+        <lea-button :loading="loading1" @click="loading1=!loading1" icon="shezhi">按钮</lea-button>
+        <lea-button :loading="loading1" @click="loading1=!loading1" icon="arrow-right" iconposition="right">按钮</lea-button>
+        <lea-button :loading="loading1" @click="loading1=!loading1" icon="arrow-left">按钮</lea-button>
+        <lea-button :loading="loading1" @click="loading1=!loading1" icon="zan" iconposition="left">按钮</lea-button>
+        <lea-button :loading="loading1" @click="loading1=!loading1" icon="arrow-down" iconposition="left">按钮</lea-button>
+        <lea-button :loading="loading1" @click="loading1=!loading1" icon="xiazai" iconposition="left">按钮</lea-button>
     </div>
     <script src="./src/app.js"></script>
-    <script src="//at.alicdn.com/t/font_1536013_drfmi6njrr.js"></script>
+    <script src="https://at.alicdn.com/t/font_1536013_m5gl6qagzcm.js"></script>
 </body>
 </html>

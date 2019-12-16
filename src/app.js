@@ -5,5 +5,8 @@ Vue.component('lea-button', Button)
 Vue.component('lea-icon', Icon)
 
 new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        loading1: false
+    }
 })
