@@ -11,6 +11,10 @@
     height: var(--button-height);
 }
 ```
+```css
+/* 解决多个元素border重叠问题 */
+margin-left: -1px;
+```
 
 
 ## button

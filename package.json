@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ittew/lea-ui#readme",
   "dependencies": {
+    "button-group": "0.0.4",
     "vue": "^2.6.10",
     "vue-hot-reload-api": "^2.3.4"
   },
@@ -27,6 +28,6 @@
     "vue-template-compiler": "^2.6.10"
   },
   "alias": {
-    "vue" : "./node_modules/vue/dist/vue.common.js"
+    "vue": "./node_modules/vue/dist/vue.common.js"
   }
 }

@@ -32,7 +32,7 @@ export default {
 .lea-button{
     font-size: var(--font-size);
     height: var(--button-height);
-    padding: 0 1em;
+    padding: 0 0.8em;
     border-radius: var(--border-radius);
     border: 1px solid var(--border-color);
     background: var(--button-bg);
@@ -48,10 +48,8 @@ export default {
         background-color: var(--button-active-bg)
     }
     .icon{
-        position: relative;
-        top: 1px;
         order: 1;
-        margin-right: .2em;
+        margin-right: .15em;
     }
     .content{
         order: 2;

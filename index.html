@@ -15,8 +15,8 @@
         user-select: none;
     }
     :root{
-        --button-height: 30px;
-        --font-size: 14px;
+        --button-height: 24px;
+        --font-size: 12px;
         --button-bg: white;
         --button-active-bg: #eee;
         --border-radius:4px;
@@ -27,11 +27,14 @@
     body{
         margin: 20px;
     }
-    
+    h2{
+        margin: 10px 0;
+    }
     </style>
 </head>
 <body>
     <div id="app">
+        <h2>按钮</h2>
         <lea-button :loading="loading1" @click="loading1=!loading1">确定</lea-button>
         <lea-button :loading="loading1" @click="loading1=!loading1" icon="shezhi">按钮</lea-button>
         <lea-button :loading="loading1" @click="loading1=!loading1" icon="arrow-right" iconposition="right">按钮</lea-button>
@@ -39,6 +42,16 @@
         <lea-button :loading="loading1" @click="loading1=!loading1" icon="zan" iconposition="left">按钮</lea-button>
         <lea-button :loading="loading1" @click="loading1=!loading1" icon="arrow-down" iconposition="left">按钮</lea-button>
         <lea-button :loading="loading1" @click="loading1=!loading1" icon="xiazai" iconposition="left">按钮</lea-button>
+        <h2>按钮组</h2>
+        <lea-button-group>
+            <lea-button icon="arrow-left">上一页</lea-button>
+            <lea-button icon="arrow-right" iconposition="right">下一页</lea-button>
+        </lea-button-group>
+        <lea-button-group>
+            <lea-button icon="arrow-left">下一页</lea-button>
+            <lea-button>更多</lea-button>
+            <lea-button icon="arrow-right" iconposition="right">下一页</lea-button>
+        </lea-button-group>
     </div>
     <script src="./src/app.js"></script>
     <script src="https://at.alicdn.com/t/font_1536013_m5gl6qagzcm.js"></script>
