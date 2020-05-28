@@ -28,3 +28,8 @@ margin-left: -1px;
 <lea-button icon="arrow-down" iconposition="left">按钮</lea-button>
 <lea-button icon="xiazai" iconposition="left">按钮</lea-button>
 ```
+
+## 测试
+* BDD   behavior driven develop
+* TDD   test driven develop
+* Assert 断言  chai库
